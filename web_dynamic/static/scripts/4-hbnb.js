@@ -66,6 +66,7 @@ $(function () {
       } else {
         delete amDict[$(this).attr('data-id')];
       }
+      h4.text(Object.values(amDict).join(', '));
     });
 
     const queryAmenities = { amenities: Object.keys(amDict) };
